@@ -1,0 +1,40 @@
+spring:
+  application:
+    name: node-server
+  servlet:
+    multipart:
+      max-file-size: 30MB
+      max-request-size: 30MB
+  jackson:
+    serialization:
+      write-dates-as-timestamps: true
+  redis:
+    timeout: 5000ms
+    lettuce:
+      shutdown-timeout: 100ms
+      pool:
+        min-idle: 0
+        max-wait: -1ms
+        max-active: 8
+        max-idle: 8
+  cache:
+    type: redis
+    redis:
+      time-to-live: 1h
+  session:
+    timeout: 3h
+    store-type: redis
+    redis:
+      namespace: NS::SESSION::SPRING
+  profiles:
+    include: datasource
+
+mybatis:
+  config-location: classpath:mybatis-config.xml
+  mapper-locations:
+    - classpath:cn/**/*Mapper.xml
+
+server:
+  port: 6767
+  servlet:
+    context-path: /ns

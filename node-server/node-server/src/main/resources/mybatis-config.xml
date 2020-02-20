@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE configuration PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+    <settings>
+        <setting name="logImpl" value="org.apache.ibatis.logging.slf4j.Slf4jImpl"/>
+        <setting name="logPrefix" value="mapper."/>
+        <setting name="mapUnderscoreToCamelCase" value="true"/>
+    </settings>
+    <plugins>
+        <plugin interceptor="com.github.pagehelper.PageHelper">
+            <property name="reasonable" value="false"/>
+            <property name="supportMethodsArguments" value="true"/>
+            <property name="returnPageInfo" value="check"/>
+            <property name="params" value="count=countSql"/>
+        </plugin>
+    </plugins>
+</configuration>

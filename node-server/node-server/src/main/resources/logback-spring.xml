@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<configuration scan="true" scanPeriod="60 seconds" debug="false">
+
+    <include resource="org/springframework/boot/logging/logback/defaults.xml"/>
+
+<!--    <springProfile name="dev">-->
+        <appender name="MAIN" class="ch.qos.logback.core.ConsoleAppender">
+            <encoder>
+                <pattern>
+                    %clr(%d{yyyy-MM-dd HH:mm:ss}){faint} %clr(%green(%-5level)){faint} --- %clr([%thread]){faint} %cyan(%logger{10}) : %msg%n
+                </pattern>
+            </encoder>
+        </appender>
+<!--    </springProfile>-->
+
+<!--    <springProfile name="product,test">-->
+        <springProperty scope="context" name="log_dir" source="log.dir"/>
+        <springProperty scope="context" name="log_name" source="log.name"/>
+        <property name="maxHistory" value="30"/>
+        <appender name="FILE" class="ch.qos.logback.core.rolling.RollingFileAppender">
+            <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+                <fileNamePattern>${log_dir}/${log_name}_%d{yyyy-MM-dd}.log</fileNamePattern>
+                <maxHistory>${maxHistory}</maxHistory>
+            </rollingPolicy>
+            <encoder>
+                <pattern>%d{yyyy-MM-dd HH:mm:ss.SSS} [%thread] %-5level %logger - %msg%n</pattern>
+            </encoder>
+        </appender>
+<!--    </springProfile>-->
+
+    <logger name="mapper" additivity="false" level="debug">
+        <appender-ref ref="MAIN"/>
+        <appender-ref ref="FILE"/>
+    </logger>
+    <root level="info">
+        <appender-ref ref="MAIN"/>
+        <appender-ref ref="FILE"/>
+    </root>
+
+</configuration>

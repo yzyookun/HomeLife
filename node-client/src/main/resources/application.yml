@@ -1,0 +1,16 @@
+spring:
+  application:
+    name: node-clinet
+  servlet:
+    multipart:
+      max-file-size: 30MB
+      max-request-size: 30MB
+  jackson:
+    serialization:
+      write-dates-as-timestamps: true
+  profiles:
+    include: datasource
+
+server:
+  servlet:
+    context-path: /

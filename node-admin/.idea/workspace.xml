@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="d5356474-188d-421a-a4de-e2dda257a74a" name="Default Changelist" comment="" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ProjectId" id="1Rbc3GeFGQVytDUrE3HiRw6O7hf" />
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.standard" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.standard" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.standard" value="" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration name="run" type="js.build_tools.npm" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/node-admin/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="dev" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="d5356474-188d-421a-a4de-e2dda257a74a" name="Default Changelist" comment="" />
+      <created>1569939035161</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1569939035161</updated>
+      <workItem from="1569939036998" duration="2129000" />
+      <workItem from="1569981527125" duration="1247000" />
+      <workItem from="1569984150684" duration="2445000" />
+      <workItem from="1570014401659" duration="639000" />
+      <workItem from="1570027565470" duration="774000" />
+      <workItem from="1570091566494" duration="11676000" />
+      <workItem from="1570181066381" duration="1581000" />
+      <workItem from="1570195758301" duration="1262000" />
+      <workItem from="1570198987859" duration="633000" />
+      <workItem from="1570243341787" duration="3047000" />
+      <workItem from="1571887554279" duration="689000" />
+      <workItem from="1577711407994" duration="1213000" />
+      <workItem from="1578057793866" duration="62000" />
+      <workItem from="1578143550895" duration="2000" />
+      <workItem from="1578143590460" duration="284000" />
+      <workItem from="1578144011811" duration="144000" />
+      <workItem from="1578148982564" duration="24000" />
+      <workItem from="1578926618355" duration="617000" />
+      <workItem from="1579182299713" duration="1000" />
+      <workItem from="1579183439714" duration="45000" />
+      <workItem from="1580807323415" duration="14000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/node-admin/src/views/Dashboard.vue</url>
+          <line>180</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>
